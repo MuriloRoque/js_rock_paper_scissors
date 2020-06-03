@@ -1,7 +1,15 @@
 function computerPlay(){
-  arr = ['Rock', 'Paper', 'Scissors'];
+  arr = [1, 2, 3];
   let play = arr[Math.floor(Math.random() * arr.length)];
-  return play;
+  if(play == 1){
+    return "rock";
+  }
+  else if(play == 2){
+    return "paper";
+  }
+  else{
+    return "scissors";
+  }
 }
 
 function playRound(playerSelection, computerSelection){
