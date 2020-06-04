@@ -1,7 +1,7 @@
 function computerPlay(){
   arr = [1, 2, 3];
   let play = arr[Math.floor(Math.random() * 3)];
-  if(play === 1){
+  if(play == 1){
     return "rock";
   }
   else if(play == 2){
@@ -34,4 +34,40 @@ function playRound(playerSelection, computerSelection){
   else if((playerSelection == "rock") && (computerSelection == "paper")){
     return "Computer won!"
   }
+  else{
+    return "Error"
+  }
 }
+
+function playGame(){
+  let playerSelection = prompt("Please enter your play");
+  let computerVar = computerPlay()
+  return playRound(playerSelection, computerVar);
+}
+
+function game(){
+  let i = 0;
+  let playerScore = 0;
+  let computerScore = 0;
+  let winner = "";
+  while(i < 5){
+    let decision = playGame();
+    if(decision == "Player won!"){
+      playerScore ++;
+    }
+    else if(decision == "Computer won!"){
+      computerScore ++;
+    }
+    i++;
+  }
+  if(playerScore > computerScore){
+    winner = "Player!";
+  }
+  else if(computerScore > playerScore){
+    winner = "Computer!";
+  }
+  else{
+    winner = "Draw!";
+  }
+  return "Final results: player " + playerScore + " and computer " + computerScore + ". Winner: " + winner;
+} 
