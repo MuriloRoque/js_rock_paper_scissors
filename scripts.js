@@ -45,29 +45,29 @@ function playGame(){
   return playRound(playerSelection, computerVar);
 }
 
-function game(){
-  let i = 0;
-  let playerScore = 0;
-  let computerScore = 0;
-  let winner = "";
-  while(i < 5){
-    let decision = playGame();
-    if(decision == "Player won!"){
-      playerScore ++;
-    }
-    else if(decision == "Computer won!"){
-      computerScore ++;
-    }
-    i++;
-  }
-  if(playerScore > computerScore){
-    winner = "Player!";
-  }
-  else if(computerScore > playerScore){
-    winner = "Computer!";
-  }
-  else{
-    winner = "Draw!";
-  }
-  return "Final results: player " + playerScore + " and computer " + computerScore + ". Winner: " + winner;
-} 
+// function game(){
+//   let i = 0;
+//   let playerScore = 0;
+//   let computerScore = 0;
+//   let winner = "";
+//   while(i < 5){
+//     let decision = playGame();
+//     if(decision == "Player won!"){
+//       playerScore ++;
+//     }
+//     else if(decision == "Computer won!"){
+//       computerScore ++;
+//     }
+//     i++;
+//   }
+//   if(playerScore > computerScore){
+//     winner = "Player!";
+//   }
+//   else if(computerScore > playerScore){
+//     winner = "Computer!";
+//   }
+//   else{
+//     winner = "Draw!";
+//   }
+//   return "Final results: player " + playerScore + " and computer " + computerScore + ". Winner: " + winner;
+// } 
