@@ -39,11 +39,22 @@ function playRound(playerSelection, computerSelection){
   }
 }
 
-function playGame(){
-  let playerSelection = prompt("Please enter your play");
+function playGame(playerSelection){
   let computerVar = computerPlay()
   return playRound(playerSelection, computerVar);
 }
+
+rock.addEventListener('click', function (e) {
+  alert(playGame("rock"));
+});
+
+paper.addEventListener('click', function (e) {
+  alert(playGame("paper"));
+});
+
+scissors.addEventListener('click', function (e) {
+  alert(playGame("scissors"));
+});
 
 // function game(){
 //   let i = 0;
