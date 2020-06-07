@@ -3,10 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Rock, Paper, Scissors</title>
   </head>
   <body>
-      
+    <div>
+      <h1 class="title">Welcome to Rock, Paper, Scissors</h1>
+      <div class="score">
+        <div id="player">
+          <p>Player</p>
+          <p id="player-score"></p>
+        </div>
+        <div>
+          <p id="results"></p>
+        </div>
+        <div id="computer">
+          <p>Computer</p>
+          <p id="computer-score"></p>
+        </div>
+      </div>
+    </div>
+    <div class="rps">
+      <div class="container">
+        <img src="images/rock.png" alt="rock">
+        <button class="btn" id="rock"></button>
+      </div>
+      <div class="container">
+        <img src="images/paper.png" alt="paper">
+        <button class="btn" id="paper"></button>
+      </div>
+      <div class="container">
+        <img src="images/scissors.png" alt="scissors">
+        <button class="btn" id="scissors"></button>
+      </div>
+    </div>
   </body>
 <script src="scripts.js"></script>
 </html>

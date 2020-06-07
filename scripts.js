@@ -14,60 +14,100 @@ function computerPlay(){
 
 function playRound(playerSelection, computerSelection){
   if(playerSelection == computerSelection){
-    return "Draw!"
+    return "Draw!";
   }
   else if((playerSelection == "rock") && (computerSelection == "scissors")){
-    return "Player won!"
+    return "Player won!";
   }
   else if((playerSelection == "paper") && (computerSelection == "rock")){
-    return "Player won!"
+    return "Player won!";
   }
   else if((playerSelection == "scissors") && (computerSelection == "paper")){
-    return "Player won!"
+    return "Player won!";
   }
   else if((playerSelection == "paper") && (computerSelection == "scissors")){
-    return "Computer won!"
+    return "Computer won!";
   }
   else if((playerSelection == "scissors") && (computerSelection == "rock")){
-    return "Computer won!"
+    return "Computer won!";
   }
   else if((playerSelection == "rock") && (computerSelection == "paper")){
-    return "Computer won!"
-  }
-  else{
-    return "Error"
+    return "Computer won!";
   }
 }
 
-function playGame(){
-  let playerSelection = prompt("Please enter your play");
-  let computerVar = computerPlay()
+function playGame(playerSelection){
+  let computerVar = computerPlay();
   return playRound(playerSelection, computerVar);
 }
 
-function game(){
-  let i = 0;
-  let playerScore = 0;
-  let computerScore = 0;
-  let winner = "";
-  while(i < 5){
-    let decision = playGame();
-    if(decision == "Player won!"){
-      playerScore ++;
-    }
-    else if(decision == "Computer won!"){
-      computerScore ++;
-    }
-    i++;
+const playerScore = document.querySelector('#player-score');
+const computerScore = document.querySelector('#computer-score');
+let pScore = 0;
+let cScore = 0;
+
+rock.addEventListener('click', function (e) {
+  let game = playGame("rock");
+  if (game == "Player won!"){
+    pScore += 1;
   }
-  if(playerScore > computerScore){
-    winner = "Player!";
+  else if(game == "Computer won!"){
+    cScore += 1;
   }
-  else if(computerScore > playerScore){
-    winner = "Computer!";
+  if(pScore == 5){
+    alert("You win!");
+    pScore = 0;
+    cScore = 0;
   }
-  else{
-    winner = "Draw!";
+  else if(cScore == 5){
+    alert("You lose!");
+    pScore = 0;
+    cScore = 0;
   }
-  return "Final results: player " + playerScore + " and computer " + computerScore + ". Winner: " + winner;
-} 
+  playerScore.textContent = pScore;
+  computerScore.textContent = cScore;
+});
+
+paper.addEventListener('click', function (e) {
+  let game = playGame("paper");
+  if (game == "Player won!"){
+    pScore += 1;
+  }
+  else if(game == "Computer won!"){
+    cScore += 1;
+  }
+  if(pScore == 5){
+    alert("You win!");
+    pScore = 0;
+    cScore = 0;
+  }
+  else if(cScore == 5){
+    alert("You lose!");
+    pScore = 0;
+    cScore = 0;
+  }
+  playerScore.textContent = pScore;
+  computerScore.textContent = cScore;
+});
+
+scissors.addEventListener('click', function (e) {
+  let game = playGame("scissors");
+  if (game == "Player won!"){
+    pScore += 1;
+  }
+  else if(game == "Computer won!"){
+    cScore += 1;
+  }
+  if(pScore == 5){
+    alert("You win!");
+    pScore = 0;
+    cScore = 0;
+  }
+  else if(cScore == 5){
+    alert("You lose!");
+    pScore = 0;
+    cScore = 0;
+  }
+  playerScore.textContent = pScore;
+  computerScore.textContent = cScore;
+});

@@ -1,0 +1,57 @@
+html{
+  background-color: rgb(221, 215, 207);
+}
+
+body{
+  padding: 2rem;
+}
+
+.title{
+  text-align: center;
+  text-transform: uppercase;
+  color: chocolate;
+}
+
+.score{
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.score div{
+  text-align: center;
+}
+
+.rps{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.container {
+  position: relative;
+  width: 5rem;
+  margin: 0 2rem;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.container .btn {
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
