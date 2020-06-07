@@ -17,7 +17,7 @@ In this project I:
 
 ## Live Demo & Getting Started
 
-[Click here](https://rawcdn.githack.com/MuriloRoque/rock_paper_scissors/774932cf80ca0fd4179de6442d01bbd0928b2880/index.html)
+[Click here](https://raw.githack.com/MuriloRoque/rock_paper_scissors/master/index.html)
 
 - In the live demo page, open your browser's developer tools;
 - Click the "Console" tab;
