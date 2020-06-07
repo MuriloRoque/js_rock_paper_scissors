@@ -9,20 +9,34 @@
   </head>
   <body>
     <div>
-      <h1>SCORE</h1>
-      <div id="player">
-        <span>Player: </span>
-        <span id="player-score"></span>
-      </div>
-      <div id="computer">
-        <span>Computer:</span>
-        <span id="computer-score"></span>
+      <h1 class="title">Welcome to Rock, Paper, Scissors</h1>
+      <div class="score">
+        <div id="player">
+          <p>Player</p>
+          <p id="player-score"></p>
+        </div>
+        <div>
+          <p id="results"></p>
+        </div>
+        <div id="computer">
+          <p>Computer</p>
+          <p id="computer-score"></p>
+        </div>
       </div>
     </div>
-    <div>
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
+    <div class="rps">
+      <div class="container">
+        <img src="images/rock.png" alt="rock">
+        <button class="btn" id="rock"></button>
+      </div>
+      <div class="container">
+        <img src="images/paper.png" alt="paper">
+        <button class="btn" id="paper"></button>
+      </div>
+      <div class="container">
+        <img src="images/scissors.png" alt="scissors">
+        <button class="btn" id="scissors"></button>
+      </div>
     </div>
   </body>
 <script src="scripts.js"></script>

@@ -55,12 +55,12 @@ rock.addEventListener('click', function (e) {
     cScore += 1;
   }
   if(pScore == 5){
-    alert("Player won!");
+    alert("You win!");
     pScore = 0;
     cScore = 0;
   }
   else if(cScore == 5){
-    alert("Computer won!");
+    alert("You lose!");
     pScore = 0;
     cScore = 0;
   }
@@ -77,12 +77,12 @@ paper.addEventListener('click', function (e) {
     cScore += 1;
   }
   if(pScore == 5){
-    alert("Player won!");
+    alert("You win!");
     pScore = 0;
     cScore = 0;
   }
   else if(cScore == 5){
-    alert("Computer won!");
+    alert("You lose!");
     pScore = 0;
     cScore = 0;
   }
@@ -99,68 +99,15 @@ scissors.addEventListener('click', function (e) {
     cScore += 1;
   }
   if(pScore == 5){
-    alert("Player won!");
+    alert("You win!");
     pScore = 0;
     cScore = 0;
   }
   else if(cScore == 5){
-    alert("Computer won!");
+    alert("You lose!");
     pScore = 0;
     cScore = 0;
   }
   playerScore.textContent = pScore;
   computerScore.textContent = cScore;
 });
-
-// function score(player){
-//   let i = 0;
-//   let playerScore = 0;
-//   let computerScore = 0;
-//   let winner = "";
-//   let decision = playGame();
-//   if(decision == "Player won!"){
-//     playerScore ++;
-//   }
-//   else if(decision == "Computer won!"){
-//     computerScore ++;
-//   }
-//   i++;
-// }
-//   if(playerScore > computerScore){
-//     winner = "Player!";
-//   }
-//   else if(computerScore > playerScore){
-//     winner = "Computer!";
-//   }
-//   else{
-//     winner = "Draw!";
-//   }
-//   return "Final results: player " + playerScore + " and computer " + computerScore + ". Winner: " + winner;
-// } 
-
-// function game(){
-//   let i = 0;
-//   let playerScore = 0;
-//   let computerScore = 0;
-//   let winner = "";
-//   while(i < 5){
-//     let decision = playGame();
-//     if(decision == "Player won!"){
-//       playerScore ++;
-//     }
-//     else if(decision == "Computer won!"){
-//       computerScore ++;
-//     }
-//     i++;
-//   }
-//   if(playerScore > computerScore){
-//     winner = "Player!";
-//   }
-//   else if(computerScore > playerScore){
-//     winner = "Computer!";
-//   }
-//   else{
-//     winner = "Draw!";
-//   }
-//   return "Final results: player " + playerScore + " and computer " + computerScore + ". Winner: " + winner;
-// } 
