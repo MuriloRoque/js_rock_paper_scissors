@@ -4,30 +4,19 @@
 
 In this project I:
 
-- Used HTML and Javascript to implement a Rock, Paper Scissors game.
+- Used HTML, CSS and Javascript to implement a Rock, Paper Scissors game.
 
 # What it does
 
-- When the game() function is executed in the console, you will play a 5 round Rock, Paper, Scissors game against the computer;
-- In the log, you will see the score and the winner.
+- When the player clicks a chosen image, a match is played against the computer. After 5 rounds, a winner is declared.
 
 ## Built with
 
-- HTML and Javascript.
+- HTML, Javascript and CSS.
 
-## Live Demo & Getting Started
+## Live Demo
 
 [Click here](https://raw.githack.com/MuriloRoque/rock_paper_scissors/master/index.html)
-
-- In the live demo page, open your browser's developer tools;
-- Click the "Console" tab;
-- Input `game` in the console;
-- Input your 5 plays;
-- Check the results in the log!
-
-## Future improvements
-
-In the future, I will make an interactive webpage with CSS styling.
 
 ## Author
 
