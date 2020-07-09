@@ -2,6 +2,8 @@
 
 # Rock Paper Scissors
 
+![screenshot](images/screenshot.png)
+
 In this project I:
 
 - Used HTML, CSS and Javascript to implement a Rock, Paper Scissors game.
